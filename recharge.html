@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>隐私政策</title>
+	<link href="http://www.fontawesome.com.cn/wp-content/themes/deeptimes/fonts/font-awesome/css/font-awesome.min.css"
+		rel="stylesheet" />
+	<!--CSS样式文件-->
+	<style>
+		.black {
+			border: 1px solid black;
+		}
+
+		body {
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.content {
+			width: 90%;
+		}
+
+		.moudle-1 .tit,
+		.moudle-2 .tit {
+			font-size: 18px;
+			display: inline;
+			line-height: 50px;
+		}
+
+		.tit-t1 {
+			font-size: 18px;
+			line-height: 26px;
+		}
+
+		.bd {
+			margin-top: 10px;
+		}
+
+		.moudle-1 .lang-cn {
+			line-height: 33px;
+		}
+
+		.lang-cd {
+			font-size: 14px;
+			line-height: 20px;
+		}
+
+		.moudle-2 .lang-cn {
+			line-height: 33px;
+		}
+
+
+		.moudle-2 .tit {
+			font-size: 16px;
+			display: inline;
+		}
+
+		.moudle-2 .tit2 {
+			font-size: 16px;
+			display: inline;
+		}
+
+		.hg {
+			margin-top: 20px;
+		}
+
+		.moudle-2 .lang-cn i,
+		.moudle-1 .lang-cn i {
+			font-size: 14px;
+			margin-right: 10px;
+			font-weight: 100;
+		}
+
+		.moudle-2 .lang-cs {
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 24px;
+		}
+
+		.title {
+			width: 100%;
+			text-align: center;
+			line-height: 90px;
+			font-size: 20px;
+		}
+
+		.line {
+			border: 1px solid rgba(128, 128, 128, 0.20);
+			margin-top: 10px;
+		}
+
+		.shu {
+			display: inline-block;
+			content: "";
+			visibility: visible;
+			width: 4px;
+			height: 18px;
+			background-color: #33a1ec;
+			border-radius: 2px;
+			margin-right: 10px;
+			vertical-align: -4px;
+		}
+	</style>
+
+	<script>
+		function GetQueryString(name) {
+			var url = window.location.href;
+			var index = url.lastIndexOf("=");
+			var appname = url.substring(index + 1);
+			return appname;
+		}
+		var name = GetQueryString("appname")
+		window.onload = function () {
+
+
+			if (name.length < 3) {
+				document.getElementById("title").innerHTML = '参数错误，请检查参数';
+			} else {
+				document.getElementById("title").innerHTML = decodeURI(name);
+			}
+			console.log(name.length)
+			//name;
+		}
+		var content = {
+			appname: name,
+			company: "兰卡威网络技术有限公司",
+			tel: "15576637087",
+			ctime: "2019年08月20日",
+			address: "湖南省长沙市岳麓区兰卡威国际公寓715房",
+		}
+
+
+		window.onload = function () {
+			init();
+			init1();
+			init2();
+			init3();
+			init4();
+			init5();
+		}
+
+		function init() {
+			var input1 = document.getElementsByClassName("appname");
+			for (var i = 0; i < input1.length; i++) {
+				input1[i].innerHTML = decodeURI(content.appname);
+			}
+		}
+
+		function init1() {
+			var input1 = document.getElementsByClassName("company");
+			for (var i = 0; i < input1.length; i++) {
+				input1[i].innerHTML = content.company;
+			}
+		}
+
+		function init2() {
+			var input1 = document.getElementsByClassName("tel");
+			for (var i = 0; i < input1.length; i++) {
+				input1[i].innerHTML = content.tel;
+			}
+		}
+
+		function init3() {
+			var input1 = document.getElementsByClassName("ctime");
+			for (var i = 0; i < input1.length; i++) {
+				input1[i].innerHTML = content.ctime;
+			}
+		}
+
+		function init4() {
+			var input1 = document.getElementsByClassName("address");
+			for (var i = 0; i < input1.length; i++) {
+				input1[i].innerHTML = content.address;
+			}
+		}
+
+		function init5() {
+			var input1 = document.getElementById("date1");
+			var input2 = document.getElementById("date2");
+			var date = "2024-4-2";
+			input1.innerHTML = date;
+			input2.innerHTML = date;
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<div class="content">
+
+		<!--<div class="title ">隐私政策</div>-->
+		<!-- ==  0、引言  == -->
+		<div class="moudle-1">
+			<div align="center">
+				<h1><span class="appname"></span> 充值协议</h1>
+			</div>
+			<!--<p class="tit">提示条款</p>-->
+			<div class="line">
+				更新时间:<span id="date1" style="font-weight:bold"></span><br /><br />
+				生效时间:<span id="date2" style="font-weight:bold"></span>
+			</div>
+
+			<div class="hg">
+				<h4>1.服务条款的接受与修改</h4>
+				<!-- <p class="lang-cn" style="font-weight:600;">1.服务条款的接受与修改</p> -->
+				<p class="lang-cn">
+				   本协议是“<span class="appname">XXX</span>”充值的用户（以下简称“用户“或“您“）与<span class="company"></span>（以下简称“我们”）之间关于就充值以及余额使用所订立的协议。
+					本协议描述我们与用户之间关于软件许可以及服务使用及相关方面的权利义务。
+					“用户”或“您”是指享受我们提供的充值服务的个人或单一实体。本服务协议构成您（无论个人或者单位）使用我们所提供的充值服务之先决条件，除非您接受本协议条款，否则您无权使用本协议的相关服务。
+					您的使用行为将视为同意接受本协议各项条款的约束。
+					<br />
+					<strong> 我们有权根据国家法律法规的变化以及实际业务运营的需要不时修改本协议相关内容，并提前公示于软件系统、网站等以通知用户。修改后的条款应于公示通知指定的日期生效。
+						如果您选择继续充值即表示您同意并接受修改后的协议且受其约束；如果您不同意我们对本协议的修改，请立即放弃充值或者停止使用本服务。</strong>
+					<br />
+					请您审阅并接受或不接受本协议，未成年人应在法定监护人陪同下审阅和履行，未成年人行使和履行本协议项下的权利和义务视为已获得了法定监护人的认可，您在享受我们充值服务时必须完全、严格遵守本服务协议条款。
+					如果您对本协议的条款有疑问的，请通过APP内的客服联系方式进行询问，我们将向您解释条款内容。
+					<strong>如果您不同意本协议的任意内容，或者无法准确理解我们对条款的解释，请不要同意本协议或使用本协议项下的服务。</strong>
+				</p>
+			</div>
+
+			<div class="hg">
+				<h4>2.服务说明</h4>
+				<p class="lang-cn">
+					2.1 我们充值服务涉及的我们产品所有权以及相关软件知识产权归我们所有。我们所提供的服务将按照其服务条款和操作规则严格执行。用户在享受我们任何单项服务时，应当受本协议的约束。
+					<br />
+					2.2 我们享有对用户网上一切活动的监督、提示、检查的权利，如用户的行为违反有关法律法规或违反本协议条款的约定，我们享有要求其纠正及追究其责任等权利。
+					<br />
+					2.3
+					我们向用户提供的全部服务，均仅限于用户在我们平台使用，任何以恶意破解等非法手段将我们提供的服务内容与我们平台分离的行为，均不属于本协议中约定的我们提供的服务。由此引起的一切法律后果由行为人负责，我们将依法追究行为人的法律责任。
+					<br />
+					2.4 当用户使用我们各单项服务时，用户的使用行为视为其对各单项服务的服务条款以及我们在该单项服务中发出各类公告的同意。
+					<br />
+					2.5
+					您明确了解并同意，我们用户的付费方式为代收费运营商托收的付款方式，您通过此种付费方式付费可能存在一定的商业风险，包括但不限于不法分子利用您账户或银行卡等有价卡等进行违法活动，该等风险均会给您造成相应的经济损失。您应自行承担向侵权方追究侵权责任和追究责任不能的后果。
+					<br />
+					2.6
+					您应自行负责妥善且正确地保管、使用、维护您在我们申请取得的账户、账户信息及账户密码。您应对您账户信息和账户密码采取必要和有效的保密措施。非我们原因致使您账户密码泄漏以及因您保管、使用、维护不当造成损失的，我们无须承担与此有关的任何责任。
+					<br />
+					2.7 我们不对您因第三方的行为或不作为造成的损失承担任何责任，包括但不限于支付服务和网络接入服务、任意第三方的侵权行为。
+				</p>
+			</div>
+
+			<div class="hg">
+				<h4>3. 用户需知</h4>
+				<p class="lang-cn">
+					<strong>
+
+						3.1
+						当用户进行充值时，用户应仔细确认自己的账号及信息，若因为用户自身操作不当、不了解或未充分了解充值计费方式等因素造成充错账号、错选充值种类等情形而损害自身权益，应由用户自行承担责任。
+						<br />
+						3.2
+						用户在充值时使用第三方支付企业提供的服务的，应当遵守与该第三方的各项协议及其服务规则；在使用第三方支付服务过程中用户应当妥善保管个人信息，包括但不限于银行账号、密码、验证码等；
+						用户同意并确认，我们对因第三方支付服务产生的纠纷不承担任何责任。
+						<br />
+						3.3
+						用户充值后，用户有权利不接受我们的服务，可申请取消充值服务，但不获得已充值费用的退还。
+						<br />
+						3.4
+						我们仅提供相关的网络服务，除此之外与相关网络服务有关的设备（如个人电脑、手机、及其他与接入互联网或移动网有关的装置）及所需的费用（如为接入互联网而支付的电话费及上网费、
+						为使用移动网而支付的手机费）均应由用户自行负担。
+						3.5 一旦您充值成功，即视为您认可该项服务标明之价格，同时该项服务即时生效。
+						<br />
+
+						3.6 您可以通过登录我们用户中心免费查询您的账号信息详情，包括已开通的服务内容、服务期限等。 <br />
+						3.7
+						您在充值成功后可享受的全部权益以我们App公布的权益为准，我们有权基于我们自身业务发展需要变更全部或部分权益。
+						就前述权益调整我们将在相应服务页面进行通知或公告，您也可通过我们App查询最新的权益内容。
+						<br />
+						3.8
+						充值金额仅限于申请账号自行使用，不能在我们帐号之间转移，禁止赠与、借用、作用、转让或售卖。否则我们有权在未经通知的情况下冻结转让账户、
+						受让账户的余额，由此带来的损失由用户自行承担。
+						<br />
+						3.9
+						若用户的行为持续违反本协议或违反国家相关法律法规，或我们认为用户行为有损我们或他人的声誉及利益，我们有权终止本协议而无须给与任何补偿。
+					</strong>
+
+				</p>
+			</div>
+			<div class="hg">
+				<h4>4. 充值异常及处理方式</h4>
+				<p class="lang-cn">
+					4.1 如果出现充值金额未到账的情况，请立即联系我们（1）App内的联系方式（2）电话：<span class="tel"></span>。<br />
+					
+                    4.2 若因我们自身充值故障原因造成用户充值失实并经查证属实的，将根据用户充值情况作出如下变动及补救措施：<br />
+						1) 因我们充值系统自身故障原因，造成系统充值额小于用户实际充值额的，我们予以补其差额；<br />
+
+						2) 因我们充值系统自身故障原因，造成系统充值额大于用户实际充值额的，我们有权追回差额。
+				</p>
+			</div>
+			<div class="hg">
+				<h4>5. 免责声明</h4>
+				<p class="lang-cn">
+					<strong>
+						4.1. 用户知悉并同意，发生下列情形时，我们免于承担可能导致的用户的任何损害赔偿责任，包括但不限于财产、收益、数据等资料方面的损失或其他无形损失：<br />
+
+						1) 用户因使用非我们支付渠道充值过程中发生的相关争议；<br />
+
+						2) 由于用户将密码告知他人或未保管好自己的密码或与他人共享帐号或任何其他非我们的过错，导致的用户财产损失；<br />
+
+						3) 因用户个人故意或重大过失，或本协议之外的第三方所造成的用户财产损失；<br />
+
+						4) 由于不可抗力及不可预见的情势导致的各种情况和纠纷。不可抗力和不可预见情势包括但不限于：黑客攻击、电信部门技术调整导致重大影响、政府管制导致的暂时关闭、病毒侵袭。
+					</strong> <br />
+
+					4.2. 如因系统维护或升级的需要而需暂停网络充值服务，我们将尽可能事先进行通告。对于充值服务的中断或终止而造成的任何损失，我们在法律规定范围内承担责任。
+
+					4.3. 如我们终止运营或运营权发生转移的，我们将提前通知用户。用户尚未使用的余额及尚未失效的服务，我们将以法定货币退还用户或者以用户接受的其他方式进行退还。
+
+				</p>
+			</div>
+
+			<div class="hg">
+				<h4>6. 服务的中断和终止</h4>
+				<p class="lang-cn">
+					<strong>
+						6.1 合作有效期内，因用户违反本协议及/或我们的其他服务规则、其他原因不能继续享受技术服务及/或广告服务的
+						（包括但不限于因用户提供的内容、信息违反中国法律、法规或本协议约定而导致我们因此而受到法律制裁或行政处罚），我们有权终止本协议；
+						<br />
+						6.2 我们在提前15天通知您的情形下有权终止本协议；
+						<br />
+						6.3 法律规定的其他可终止本协议的情形；
+						<br />
+						6.4 任何一方宣布破产或进入清算或解散程序，另一方有权终止本协议。
+						<br />
+					</strong>
+				</p>
+			</div>
+
+			<div align="center">
+				<p class="lang-cn"><span class="company"></span> <span class="appname"></span></p>
+			</div>
+		</div>
+</body>
+
+</html>
